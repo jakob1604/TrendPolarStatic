@@ -1,0 +1,161 @@
+
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  color: #797979;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #1a5cb3;
+  color: white;
+}
+
+.topnav-right,.logo {
+  float: right;
+}
+
+.logo {
+  float: none;
+  display: block;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left:16px;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right , .middle-navbar, .logo{
+    float: none;
+    display: block;
+  }
+  
+  .middle-navbar a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    
+  }
+}
+  body {
+    margin: 0;
+    font-family: 'Teko', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+
+
+.logo {
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+
+.div-1 {   
+height: 500px;
+width: 45%;
+margin: 2rem;
+border: 2px solid #ccc!important;
+border-radius: 16px;
+background-color: white;
+}
+.div-2 {
+
+height: 500px;
+width: 45%;
+margin: 2rem;
+border: 2px solid #ccc!important;
+border-radius: 16px;
+background-color: white;
+}   
+.div-3 {
+height: 500px;
+width: 45%;
+margin: 2rem;
+border: 2px solid #ccc!important;
+border-radius: 16px;
+background-color: white;
+}
+.div-4 {
+height: 500px;
+width: 45%;
+border: 2px solid #ccc!important;
+border-radius: 16px;
+margin: 2rem;
+background-color: white;
+}
+div { 
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.static{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.middle-navbar {
+  width: 100%;
+  background-color: #cacaca;
+  overflow: auto;
+}
+/* Navigation links */
+.middle-navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.site {
+    width: 80%;
+    background-color: #ffffff;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px){
+.site {
+
+    width: 100%;
+
+}
+}
+
+
+
