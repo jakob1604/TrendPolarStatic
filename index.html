@@ -1,0 +1,196 @@
+<html>
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+  <title>TrendPolar</title>
+  <link rel="icon" type="image/x-icon" href="/static/logo.svg">
+    
+    <title></title>
+      <!--
+    #DDDDDD = gray
+    #222831 = black
+    #30475E = navy
+    #F05454 = red
+    
+    
+    -->
+<style>
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #202020;
+  font-size: 25px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #1a5cb3;
+  color: white;
+}
+
+
+
+
+.topnav-right,.logo {
+  float: right;
+}
+
+.logo {
+  float: none;
+  display: block;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left:16px;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right , .middle-navbar, .logo{
+    float: none;
+    display: block;
+  }
+  
+  .middle-navbar a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    
+  }
+}
+  body {
+    margin: 0;
+    font-family: 'Teko', sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 25px;
+  }
+
+
+.logo {
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.div-1 {   
+  height: 500px;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.div-2 {
+  
+  height: 500px;
+  width: 50%;
+}   
+.div-3 {
+  
+  height: 500px;
+  width: 50%;
+}
+.div-4 {
+  
+  height: 500px;
+  width: 50%;
+}
+div { 
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.static{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.middle-navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
+/* Navigation links */
+.middle-navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  
+}
+</style>
+
+    </head>
+    <body>
+      <!-- Top navigation -->
+<div class="topnav">
+
+
+  <!-- Left-aligned links (default) -->
+  <div class="logo">
+
+    <img src="{{url_for('static', filename='logo.svg')}}" height="30"/>
+</div>
+  
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="#about">ABOUT</a>
+      <a href="#donate">DONATE</a>
+    </div>
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <div class="middle-navbar">
+      <a href="#home" class="active">HOME</a>
+      <a href="#finance" >FINANCE</a>
+      <a href="#sports" >SPORTS</a>
+      <a href="#media" >MEDIA</a>
+    </div>
+  </div>
+  
+  
+
+  
+</div>
+      <div class="flex-container">
+      <div class="div-1"><h3><img src='my_plot.png'/></h3></div>
+      <div class="div-2">
+        <div class="div-2-1"><h3>Chart Title</h3></div>
+        <div class="div-2-2">
+        <img class="static" src="{{url_for('static', filename='sample.png')}}"/> </div>
+      <div class="div-2-3"><h3>Chart description</h3></div>
+      </div>
+      <div class="div-3"><h4><img src="data:image/png;base64,{{ image_base64 }}" alt="Plot"></h4></div>
+      <div class="div-4"><h4></h4></div>
+    </div>
+      </body>
+</html>
+
