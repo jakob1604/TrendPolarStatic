@@ -279,3 +279,7 @@ letter-spacing: 0.13rem;
     
     }
 }
+
+.donate a {
+color: red;
+}
