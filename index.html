@@ -37,14 +37,14 @@
   <!-- Left-aligned links (default) -->
   <div class="logo">
 
-    <img src="./static/logo.svg" height="80px"/>
+   <a href="index.html" ><img src="./static/logo.svg" height="80px"/> </a>
 </div>
   
     <!-- Right-aligned links -->
     <div class="topnav-right">
     <a href="#about">ABOUT</a>
     <a href="#contact">CONTACT</a>
-    <a class = "donate" href="#donate">DONATE</a>
+    <a id = "donate" href="/donate/donate.html">DONATE</a>
     </div>
 
   
@@ -52,10 +52,9 @@
 </div>
 
 <div class="site">
-
-    <!-- Centered link -->
   <div class="sidebar">
     <div class="sidebar_children">
+      
       <a href="#politics" class="active">Politics</a>
       <a href="#finance" >Finance</a>
       <a href="#sports" >Sports</a>
@@ -63,12 +62,21 @@
     </div>
   </div>
 
+ 
+
+    <!-- Centered link -->
+ 
+
       <div class="flex-container">
       <div class="div-1">
+        <div class="div-1-1">
         <h1>Sample data</h1>
     <canvas id="myChart" width="400" height="200"></canvas>
 
     <script>
+
+ 
+
       // Data from: https://data.giss.nasa.gov/gistemp/
       // Mean from: https://earthobservatory.nasa.gov/world-of-change/DecadalTemp
 
@@ -111,19 +119,26 @@
         return { years, temps };
       }
     </script>
+      </div>
+        <div class="div-1-2">
+          <h3>Description of data. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, debitis consequatur dolore ullam asperiores incidunt nesciunt quia voluptates est. Alias, quam? Fugiat ducimus dolores impedit expedita suscipit quam exercitationem animi? </h3>
 
+        </div>
       </div>
       <div class="div-2">
-        <div class="div-2-1"><h3>test</h3></div>
+        <div class="div-2-1"></div>
         <div class="div-2-2">
          </div>
-      <div class="div-2-3"><h3>Chart description</h3></div>
+      <div class="div-2-3"></div>
       </div>
       <div class="div-3"></div>
       <div class="div-4"><h4></h4></div>
     </div>
 
 </div>
+
+
+     
       </body>
 </html>
 

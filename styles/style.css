@@ -126,13 +126,13 @@ div {
 }
 
 .site {
-    width: 70%;
+    
     background-color: #ffffff;
     display: flex;
     overflow: auto;
     justify-content: center;
     align-items: auto;
-    margin: auto;
+    
 }
 
 .sidebar {
@@ -159,7 +159,7 @@ flex-flow: row wrap;
   text-align: left;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: 100%;
   border-bottom: 1px solid #ccc!important;
   font-family: 'Roboto', sans-serif;
@@ -214,6 +214,7 @@ flex-flow: row wrap;
     background-color: #ffffff;
     justify-content: space-around;
     align-content: space-around;
+    
   }
 
   
@@ -226,9 +227,10 @@ flex-flow: row wrap;
 }
 
 .site {
-
+  
   width: 100%;
-
+  display: flex;
+  justify-content: center;
 
 }
 .div-1, .div-2, .div-3, .div-4 {
@@ -250,17 +252,19 @@ flex-flow: row wrap;
 
 .topnav {
   border-bottom: 1px solid #ccc!important;
+  position: fixed;
+  width: 100%;
 
 }
 
 .topnav-right a {
 
-font-size: 2rem;
+
 align-items: center;
 color: #a5a5a5;
 padding: 14px 16px;
 text-decoration: none;
-font-size: 1.5rem;
+
 
 font-family: 'Roboto', sans-serif;
 letter-spacing: 0.13rem;
@@ -268,7 +272,7 @@ letter-spacing: 0.13rem;
 .topnav-right {
   padding-right: 2rem;
   padding-left: 2rem;
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
   
 }
 
@@ -276,10 +280,68 @@ letter-spacing: 0.13rem;
   .topnav-right {
   
     margin-top: 0rem;
-    
+    font-size: 1.3rem;
     }
+  .sidebar {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 202px; /* Add this line */
+  min-width: 200px;
+  font-size: 1.3rem;
+  }
+  .flex-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 300px;
+   
+
+  }
 }
 
-.donate a {
+#donate {
 color: red;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 92px;
+  width: 20%;
+  left: 0;
+
+}
+
+.site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 20%; /* Add this line */
+}
+
+@media screen and (orientation : landscape) {
+.flex-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-top: 10rem;
+  max-width: 70rem;
+  margin-right: 20%;
+}
+.sidebar, .topnav-right {
+  font-size: 10px;
+}
+
+
 }
